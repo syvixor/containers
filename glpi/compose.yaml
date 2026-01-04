@@ -3,7 +3,7 @@ services:
     image: glpi/glpi:latest
     restart: unless-stopped
     ports:
-      - 5001:80
+      - 5005:80
     volumes:
       - ./storage/glpi:/var/glpi:rw
     environment:
