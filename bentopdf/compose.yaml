@@ -1,0 +1,8 @@
+services:
+  bentopdf:
+    image: bentopdf/bentopdf-simple:latest
+    restart: unless-stopped
+    ports:
+      - 5005:8080
+    environment:
+      - DISABLE_IPV6= ${DISABLE_IPV6}
